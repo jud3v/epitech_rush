@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.my-container {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 80px;
+}
+
+input {
+    display: block;
+    justify-content: center;
+    margin-top: 25px;
+    height: 40px;
+    width: 100%;
+    padding: 1.5rem 2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.2rem;
+    border-bottom: 0.3rem solid transparent;
+    font-size: 1.2rem;
+    background-color: rgb(253, 253, 253);
+    transition: all 0.3s;
+}
+
+label {
+    font-size: 1.2rem;
+    margin-top: 0.7rem;
+    display: block;
+    transition: all 0.3s;
+    transform: translateY(0rem);
+}
+
+.text-bold {
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+}
+
+/*HELPER*/
+
+.my-text-center {
+    text-align: center;
+}
+
+.my-mb-3 {
+    margin-bottom: 30px;
+}
+
+.get-full-height {
+    height: 100vh;
+    display: block;
+    position: relative;
+    border: 1px solid black
+}
+
+.btnd {
+    background: #7c7c7c;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    padding: 30px 28px;
+    border-radius: 0px;
+    display: inline-block;
+    line-height: 0;
+    cursor: pointer;
+    margin-bottom: 0;
+    margin: 10px;
+    cursor: pointer;
+    transition: color 0.5s linear;
+    position: relative;
+    z-index: 1;
+    border: 0;
+    overflow: hidden;
+}
+
+.btnd::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #27b0ff;
+    z-index: 1;
+    transition: transform 0.5s;
+    transition-timing-function: ease;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+    transform: scaleX(0);
+    border-radius: 0px;
+}
+
+.btnd:hover::before {
+    transform: scaleX(1);
+    color: #fff !important;
+    z-index: -1;
+}
+
+.btna {
+
+    background: #7c7c7c;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    padding: 30px 28px;
+    border-radius: 0px;
+    display: inline-block;
+    line-height: 0;
+    cursor: pointer;
+    margin-bottom: 0;
+    margin: 10px;
+    cursor: pointer;
+    transition: color 0.5s linear;
+    position: relative;
+    z-index: 1;
+    border: 0;
+    overflow: hidden;
+}
+
+.btna::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #2c961e;
+    z-index: 1;
+    transition: transform 0.5s;
+    transition-timing-function: ease;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+    transform: scaleX(0);
+    border-radius: 0px;
+}
+
+.btna:hover::before {
+    transform: scaleX(1);
+    color: #fff !important;
+    z-index: -1;
+}
